@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Random Location Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+  <style>
+    #map {
+      height: 400px;
+      width: 600px;
+    }
+    .controls {
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="embed-map-fixed"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University%20of%20Oxford&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe></div><style>.embed-map-fixed{position:relative;text-align:right;width:600px;height:400px;}.embed-map-container{overflow:hidden;background:none!important;width:600px;height:400px;}.embed-map-frame{width:600px!important;height:400px!important;}</style></div>
-    </div>
+  <div class="controls">
+    <button id="generate-location">Generate Random Location</button>
+  </div>
+  <div id="map"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
